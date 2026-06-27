@@ -1,163 +1,81 @@
 body {
     background-color: #dedede;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family:Arial, sans-serif;
     font-size: 32px;
 }
 
+/* link */
 a {
     color: #000;
     text-decoration: none;
-    font-family:Arial, sans-serif;
 }
 
+/* paragraph */
 p {
-   font-size: 25px;
-   font-family:Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
-img{
-  width:100%;
+/* =========================
+   IMAGE BOX MODEL (REQUIRED)
+========================= */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #000;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-
-p{
-  text-align:center;
-}
-
-div img{
-    width:150px;
-    height: 150px;
-    display:block;
-    margin:auto;
-}
-
-div{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-main {
-    border: 5px #000 solid;
-    margin: 10px;
-}
- */
-/* 
-
-.container {
+/* =========================
+   GRID LAYOUT (MOBILE FIRST)
+========================= */
+.grid {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    gap: 10px;
+    padding: 10px;
 }
- */
-/* img{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-} */
 
-/* .child {
-    position: relative;
-    display: inline-block;
-    border: 5px black solid;
-    margin: 5px;
-    border-radius: 5px;
-} */
-
-/* 
-
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.button {
-    display: inline-block;
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 25px;
-}
- */
-/* 
-.button:hover {
-    background-color:#fff;
-} */
-
-/* 
-footer {
-    display: flex;
-    justify-content: center;
-} */
-
-/* 
-header {
-    border-radius: 5px;
-    border: 5px #000 solid;
-    margin: 10px;
-} */
-
-/* 
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.child:hover .label {
-    display: block;
-} */
-
+/* =========================
+   TABLET VIEW
+   >= 772px
+========================= */
 @media screen and (min-width: 772px) {
 
-  div {
-    width: 45%;
-    display: inline-block;
-  }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  img {
-    max-height: 30vh;
-  }
+    img {
+        max-height: 30vh;
+        width: auto;
+    }
 }
 
-
+/* =========================
+   DESKTOP VIEW
+   >= 998px
+========================= */
 @media screen and (min-width: 998px) {
 
-  div {
-    width: 30%;
-  }
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* =========================
+   BONUS HOVER (EXTRA POINTS)
+========================= */
+figure {
+    transition: transform 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.03);
 }
