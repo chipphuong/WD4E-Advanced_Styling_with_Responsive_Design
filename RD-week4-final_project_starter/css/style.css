@@ -21,7 +21,7 @@ p {
 }
 
 /* =========================
-   IMAGE BOX MODEL (REQUIRED)
+   IMAGE BOX MODEL (BẮT BUỘC)
 ========================= */
 img {
     width: 100%;
@@ -33,7 +33,7 @@ img {
 }
 
 /* =========================
-   GRID LAYOUT (MOBILE FIRST)
+   GRID (MOBILE FIRST)
 ========================= */
 .grid {
     display: grid;
@@ -43,8 +43,7 @@ img {
 }
 
 /* =========================
-   TABLET VIEW
-   >= 772px
+   TABLET VIEW (>=772px)
 ========================= */
 @media screen and (min-width: 772px) {
 
@@ -59,8 +58,7 @@ img {
 }
 
 /* =========================
-   DESKTOP VIEW
-   >= 998px
+   DESKTOP VIEW (>=998px)
 ========================= */
 @media screen and (min-width: 998px) {
 
@@ -70,7 +68,7 @@ img {
 }
 
 /* =========================
-   BONUS HOVER (EXTRA POINTS)
+   BONUS HOVER EFFECT
 ========================= */
 figure {
     transition: transform 0.3s ease;
